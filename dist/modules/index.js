@@ -1,6 +1,6 @@
 /**
  * Anime.js - ESM
- * @version v4.4.1
+ * @version v1.0.0-龙械
  * @license MIT
  * @copyright 2026 - Julian Garnier
  */
@@ -24,6 +24,9 @@ import * as index$3 from './text/index.js';
 export { index$3 as text };
 export { WAAPIAnimation, waapi } from './waapi/waapi.js';
 export { globals } from './core/globals.js';
+import * as __ from './龙械.js';
+export { __ as 龙械 };
+export { 叠, 射, 引擎, 掠, 散, 械, 涌, 版本, 签, 聚, 节, 落, 融, 谱, 起, 震 } from './龙械.js';
 export { cubicBezier } from './easings/cubic-bezier/index.js';
 export { steps } from './easings/steps/index.js';
 export { linear } from './easings/linear/index.js';

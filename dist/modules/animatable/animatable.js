@@ -1,6 +1,6 @@
 /**
  * Anime.js - animatable - ESM
- * @version v4.4.1
+ * @version v1.0.0-龙械
  * @license MIT
  * @copyright 2026 - Julian Garnier
  */

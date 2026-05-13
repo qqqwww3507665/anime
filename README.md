@@ -1,169 +1,123 @@
-# Anime.js
+# 龙械库 · LongRhythm
 
-<p align="center">
-  <picture align="center">
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/images/animejs-v4-logo-animation-dark.gif">
-    <img align="center" alt="Anime.js V4 logo animation" src="./assets/images/animejs-v4-logo-animation.gif" width="560">
-  </picture>
-</p>
+长九（造浪者 / 首席营销官）专属运动武器库。
 
-<p align="center">
-  <strong>
-  <em>Anime.js</em> is a fast, multipurpose and lightweight JavaScript animation library with a simple, yet powerful API.<br>
-  It works with CSS properties, SVG, DOM attributes and JavaScript Objects.
-  </strong>
-</p>
+龙言逻辑体系的下层执行引擎。不是动画库，是**在时间中展开设计的执行工具**。
 
+---
 
-<p align="center">
-  <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/animejs?style=flat-square&logo=npm">
-  <img alt="jsDelivr hits (npm)" src="https://img.shields.io/jsdelivr/npm/hm/animejs?style=flat-square&logo=jsdeliver">
-  <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/juliangarnier?style=flat-square&logo=github">
-</p>
+## 一句话
 
-## Sponsors
+龙言负责"想"，龙械库负责"做"。你写设计意图，龙械库出像素。
 
-Anime.js is 100% free and is only made possible with the help of our sponsors.
-Help the project become sustainable by sponsoring us on <a target="_blank" href="https://github.com/sponsors/juliangarnier">GitHub Sponsors</a>.
+---
 
-### Platinum sponsors
+## 安装
 
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-large.png?v=200126" width="310">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-large.png?v=200126" width="310">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-large.png?v=200126" width="310">
-          </picture>
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Silver sponsors
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <a target="_blank" href="https://www.testmuai.com/?utm_medium=sponsor&utm_source=animejs">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/sponsors/testmu-ai-logomark.png?v=200126">
-            <img align="center" src="./assets/sponsors/testmu-ai-logomark-dark.png?v=200126" width="141">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-small.png?v=200126" width="141">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-small.png?v=200126" width="141">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-small.png?v=200126" width="141">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-small.png?v=200126" width="141">
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <picture>
-            <img align="center" src="./assets/sponsors/placeholder-small.png?v=200126" width="141">
-          </picture>
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Get featured here by becoming a <a target="_blank" href="https://github.com/sponsors/juliangarnier">GitHub Sponsor</a>.
-
-
-## Usage
-
-Anime.js V4 works by importing ES modules like so:
-
-
-<table>
-<tr>
-  <td>
-
-```javascript
-import {
-  animate,
-  stagger,
-} from 'animejs';
-
-animate('.square', {
-  x: 320,
-  rotate: { from: -180 },
-  duration: 1250,
-  delay: stagger(65, { from: 'center' }),
-  ease: 'inOutQuint',
-  loop: true,
-  alternate: true
-});
+```bash
+npm install longrhythm
 ```
 
-  </td>
-  <td>
-    <img align="center" alt="Anime.js code example" src="./assets/images/usage-example-result.gif">
-  </td>
-</tr>
-</table>
+或直接引用：
 
-## V4 Documentation
+```html
+<script type="importmap">
+{
+  "imports": {
+    "longrhythm": "https://cdn.jsdelivr.net/npm/longrhythm/dist/modules/index.js"
+  }
+}
+</script>
+```
 
-The full documentation is available [here](https://animejs.com/documentation).
+---
 
-## V3 Migration guide
+## 使用
 
-You can find the v3 to v4 migration guide [here](https://github.com/juliangarnier/anime/wiki/Migrating-from-v3-to-v4).
+### 基础招式
 
-## NPM development scripts
+```javascript
+import { 起, 涌, 射, 谱 } from 'longrhythm'
 
-First, run `npm i` to install all the necessary packages.
-Then, execute the following scripts with `npm run <script>`.
+// 起：入场
+起('.标题', { 签名: '寒' })
 
-| script | action |
-| ------ | ------ |
-| `dev` | Watches for changes in `src/**/*.js`, bundles the ESM version to `lib/` and creates type declarations in `types/` |
-| `dev:test` | Runs `dev` and `test:browser` concurrently |
-| `build` | Bundles ESM / UMD / CJS / IIFE versions to `lib/` and creates type declarations in `types/` |
-| `test:browser` | Starts a local server and runs all browser-related tests |
-| `test:node` | Starts Node-related tests |
-| `open:examples` | Starts a local server to browse the examples locally |
+// 涌：多个元素依次涌入
+涌('.卡片', { 签名: '弹', 节奏: '涟漪' })
 
-© [Julian Garnier](http://juliangarnier.com) | [MIT License](LICENSE.md)
+// 射：从底部弹射入场
+射('.按钮', { 签名: '锋', 方向: 'bottom' })
+```
+
+### 叙事时间线
+
+```javascript
+谱()
+  .起('.标题', { 签名: '寒' })
+  .涌('.卡片', { 签名: '弹' })
+  .射('.按钮', { 签名: '锋' })
+```
+
+---
+
+## 词汇表
+
+### 动词（做什么运动）
+
+| 龙言 | 含义 |
+|---|---|
+| 起 | 入场 |
+| 落 | 退场 |
+| 散 | 扩散 |
+| 聚 | 汇聚 |
+| 掠 | 擦过 |
+| 震 | 脉动 |
+| 涌 | 涌入 |
+| 叠 | 堆叠 |
+| 融 | 溶解 |
+| 射 | 弹射 |
+
+### 签名（情绪品质）
+
+| 龙言 | 情绪 | 对应缓动 |
+|---|---|---|
+| 寒 | 冷峻精确 | inOutQuint |
+| 锋 | 锋锐急骤 | inExpo |
+| 弹 | 弹性有力 | outBack |
+| 绵 | 柔软温和 | spring |
+| 震 | 震撼戏剧 | outElastic |
+
+### 节奏（编组模式）
+
+| 龙言 | 模式 |
+|---|---|
+| 涟漪 | 中心向外散开 |
+| 阵列 | 线性依次 |
+| 奔涌 | 波浪递进 |
+| 回响 | 边缘向内 |
+| 随机 | 无规则 |
+
+---
+
+## 底层引擎
+
+龙械库基于逐帧渲染循环构建，轻量（约 8KB gzip）、无依赖、支持所有现代浏览器。
+
+底层暴露为 `械()` 函数，需要完全自定义参数时使用原生格式：
+
+```javascript
+import { 械 } from 'longrhythm'
+
+械('.元素', {
+  translateX: [0, 320],
+  duration: 1250,
+  ease: 'inOutQuint',
+  loop: true
+})
+```
+
+---
+
+## 授权
+
+MIT

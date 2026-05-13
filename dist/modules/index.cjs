@@ -1,6 +1,6 @@
 /**
  * Anime.js - CJS
- * @version v4.4.1
+ * @version v1.0.0-龙械
  * @license MIT
  * @copyright 2026 - Julian Garnier
  */
@@ -22,6 +22,7 @@ var index$2 = require('./svg/index.cjs');
 var index$3 = require('./text/index.cjs');
 var waapi = require('./waapi/waapi.cjs');
 var globals = require('./core/globals.cjs');
+var __ = require('./龙械.cjs');
 var index$4 = require('./easings/cubic-bezier/index.cjs');
 var index$5 = require('./easings/steps/index.cjs');
 var index$6 = require('./easings/linear/index.cjs');
@@ -69,6 +70,23 @@ exports.text = index$3;
 exports.WAAPIAnimation = waapi.WAAPIAnimation;
 exports.waapi = waapi.waapi;
 exports.globals = globals.globals;
+exports.叠 = __.叠;
+exports.射 = __.射;
+exports.引擎 = __.引擎;
+exports.掠 = __.掠;
+exports.散 = __.散;
+exports.械 = __.械;
+exports.涌 = __.涌;
+exports.版本 = __.版本;
+exports.签 = __.签;
+exports.聚 = __.聚;
+exports.节 = __.节;
+exports.落 = __.落;
+exports.融 = __.融;
+exports.谱 = __.谱;
+exports.起 = __.起;
+exports.震 = __.震;
+exports.龙械 = __;
 exports.cubicBezier = index$4.cubicBezier;
 exports.steps = index$5.steps;
 exports.linear = index$6.linear;

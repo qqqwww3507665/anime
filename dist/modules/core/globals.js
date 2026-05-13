@@ -1,6 +1,6 @@
 /**
  * Anime.js - core - ESM
- * @version v4.4.1
+ * @version v1.0.0-龙械
  * @license MIT
  * @copyright 2026 - Julian Garnier
  */
@@ -77,7 +77,7 @@ const globals = {
   editor: null,
 };
 
-const globalVersions = { version: '4.4.1', engine: null };
+const globalVersions = { version: '1.0.0-龙械', engine: null };
 
 if (isBrowser) {
   if (!win.AnimeJS) win.AnimeJS = [];

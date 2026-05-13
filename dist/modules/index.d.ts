@@ -18,3 +18,5 @@ export * as utils from "./utils/index.js";
 export * as svg from "./svg/index.js";
 export * as text from "./text/index.js";
 export { globals } from "./core/globals.js";
+export * as 龙械 from "./\u9F99\u68B0.js";
+export { 起, 落, 散, 聚, 掠, 震, 涌, 叠, 融, 射, 签, 节, 谱, 械, 版本, 引擎 } from "./\u9F99\u68B0.js";

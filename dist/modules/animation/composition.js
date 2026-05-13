@@ -1,15 +1,15 @@
 /**
  * Anime.js - animation - ESM
- * @version v4.4.1
+ * @version v1.0.0-龙械
  * @license MIT
  * @copyright 2026 - Julian Garnier
  */
 
-import { compositionTypes, minValue, tweenTypes } from '../core/consts.js';
+import { minValue, compositionTypes, tweenTypes } from '../core/consts.js';
 import { forEachChildren, removeChild, isUnd, addChild, round, cloneArray } from '../core/helpers.js';
 import { sanitizePropertyName } from '../core/styles.js';
 import { engine } from '../engine/engine.js';
-import { additive, addAdditiveAnimation } from './additive.js';
+import { addAdditiveAnimation, additive } from './additive.js';
 
 /**
  * @import {
